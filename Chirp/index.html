@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>ChitChat</title>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+
+    <link href="StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div   class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Chirp</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Profile</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">All <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Friends</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Images</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        
+    </nav>
+       
+
+
+    <!-- main content -->
+    <div class="container">
+
+        <!-- title -->
+        <h1 class="page-header text-center">Chirpster</h1>
+
+        <!-- input for later use -->
+        <input id="user-name-id" class="form-control center-block" type="text" placeholder="For later uses "value="Captain Bravo" />
+
+        <!--  -->
+        <div class="page-header">
+            <!-- first row -->
+            <div class="row">
+
+                <!-- right column -->
+                <div class="col-sm-6">
+                    <h3 class="text-center">Message</h3>
+                    <input id="user-message" class="form-control" type="text" placeholder="Enter text"  />
+                    <input id="url-id" class="form-control" type="text" placeholder="Send to" value="codercamps-mojo" />
+                    <input class="btn btn-primary btn-block " type="button" value="Send" onclick="onMessageSend('user-name-id','user-message','url-id')" />
+                </div>
+
+                <!-- left column -->
+                <div class="col-sm-6">
+                    <h3 class="text-center">Chirp</h3>
+                    <input id="tweetMessage" class="form-control" type="text" placeholder="Enter text" />
+                    <input class="btn btn-primary btn-block " type="button" value="Send" onclick="onTweetSend('user-name-id','tweetMessage')" />
+                </div>
+
+            </div> <!-- end of first row -->
+            <!-- second row -->
+            <div class="row">
+
+                <!-- right column -->
+                <div class="col-md-6 table-responsive">
+                    <h3 class="text-center">Messages</h3>
+                    <table  id="message-table" class="table table-bordered table-striped">
+                        
+                        
+
+
+                    </table>
+                </div>
+
+                <!-- left column -->
+                <div class="col-md-6 table-responsive">
+                    <h3 class="text-center">Tweets</h3>
+                    <table id="tweetTable" class="table table-bordered table-striped">
+                        <tr>
+                            
+                            <th class="text-center">Chirps</th>
+                            <th>Delete</th>
+                        </tr>
+                       
+                    </table>
+                </div>
+
+            </div><!-- end of first row -->
+
+        </div> <!-- -->
+
+    </div><!-- end of main content -->
+    <!-- script -->
+
+
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="JavaScript1.js"></script>
+</body>
+</html>

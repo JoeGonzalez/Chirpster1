@@ -1,0 +1,29 @@
+﻿body {
+    background-color:#551111;
+}
+h1{
+    color:whitesmoke;
+    font-family:'chirp';
+    font-size:300px;
+
+}
+h3{
+    color:white;
+}
+.navbar.brand{
+    color:#f4a460;
+}
+#title{
+    color:#f4a460;
+}
+.table tr{
+    color:#f2aa6d;
+    font-weight:900;
+}
+.table th{
+    color:black;
+}
+@font-face{
+    font-family: 'Chirp';
+    src:url("../motherland.ttf");
+}
